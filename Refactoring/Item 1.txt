@@ -1,0 +1,28 @@
+Item 1
+
+
+class rectangle {
+$height;
+$width;
+$depth
+$area;
+$volume;
+}
+
+public function setValue(string $name, int value){
+if($name == 'height'){
+   $height = $value;
+ }
+if($name == 'width'){
+   $width = $value;
+ }
+if($name == 'depth'){
+   $depth = $value;
+ }
+	return $value;
+}
+
+public function setProperties(){
+	$area = $height * $width;
+	$volume = $height * $width * $depth;
+}
