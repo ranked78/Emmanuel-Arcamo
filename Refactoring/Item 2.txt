@@ -1,0 +1,13 @@
+public function getDisctanceTravelled($time, $haggis){
+ $result = 0;
+ $acceleration = $haggis->primaryForce / $haggis->mass;
+ $computedTime = min($time, $haggis->delay); //primary time
+ $result = 0 . 5 $acceleration * $computed Time * $computedTime;
+ $computedTime = $time - $haggis ->delay;
+   if($computedTime > 0){
+	$primaryVelocity $acceleration * $haggis->delay;
+	$acceleration = ($haggis->primaryForce + $haggis-> secondaryForce / $haggis->mass;
+	$result += ($primaryVelocity * $computedTime) + (0.5 * $acceleration * $computedTime * $computedTime)
+ }
+	return $result;
+}
